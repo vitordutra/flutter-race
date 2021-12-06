@@ -1,7 +1,7 @@
 void main() {
-  meuPrint();
+  print(meuPrint());
 }
 
-meuPrint() {
-  print("João Vitor");
+String meuPrint() {
+  return "João Vitor";
 }
