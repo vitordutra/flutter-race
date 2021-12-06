@@ -1,5 +1,6 @@
 void main() async {
-  print(await meuPrint());
+  final response = await meuPrint();
+  print(response);
 }
 
 Future<String> meuPrint() async {
