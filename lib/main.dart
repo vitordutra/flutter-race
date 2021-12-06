@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Center(
         child: Text(
-          "Count: 0",
+          "Count: ${count}",
           style: TextStyle(fontSize: 28),
         ),
       ),
