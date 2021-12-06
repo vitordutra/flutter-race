@@ -1,5 +1,6 @@
 void main() async {
-  String response = await meuPrint();
+  late String response;
+  response = await meuPrint();
   print(response);
 }
 
