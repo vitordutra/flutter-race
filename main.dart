@@ -1,17 +1,10 @@
 void main() async {
-  final myClass = MyClass("João Vitor Dutra");
-  print(myClass.name);
+  final user = User("João Vitor Dutra", "joaovitor@email.com");
+  print(user.email);
 }
 
-Future<Map<String, String>> myPrint() async {
-  await Future.delayed(Duration(seconds: 3));
-  return {
-    "nome": "João Vitor Dutra",
-    "posicao": "Top 5",
-  };
-}
-
-class MyClass {
+class User {
   final String name;
-  MyClass(this.name);
+  final String email;
+  User(this.name, this.email);
 }
