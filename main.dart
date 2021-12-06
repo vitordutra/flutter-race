@@ -1,5 +1,5 @@
-void main() {
-  print(meuPrint());
+void main() async {
+  print(await meuPrint());
 }
 
 Future<String> meuPrint() async {
