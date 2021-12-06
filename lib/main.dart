@@ -16,8 +16,20 @@ class AppWidget extends StatelessWidget {
   }
 }
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+// Agora é um estado
+class _HomePageState extends State<HomePage> {
+  int count = 0;
+
+  void increment() {
+    count++;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +46,8 @@ class HomePage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () {
-          print("Click");
+          increment();
+          print(count);
         },
       ),
     );
