@@ -1,3 +1,7 @@
 void main() {
-  print("Gabul Dev");
+  meuPrint();
+}
+
+meuPrint() {
+  print("João Vitor");
 }
