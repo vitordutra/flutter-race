@@ -21,6 +21,22 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Olá Mundo!"),
+      ),
+      body: Center(
+        child: Text(
+          "Count: 0",
+          style: TextStyle(fontSize: 28),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          print("Click");
+        },
+      ),
+    );
   }
 }
