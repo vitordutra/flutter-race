@@ -2,6 +2,6 @@ void main() {
   print(meuPrint());
 }
 
-String meuPrint() {
+Future<String> meuPrint() async {
   return "João Vitor";
 }
