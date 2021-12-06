@@ -1,7 +1,6 @@
 void main() async {
-  late final String response;
-  response = await myPrint();
-  print(response);
+  final myClass = MyClass("João Vitor Dutra");
+  print(myClass.name);
 }
 
 Future<Map<String, String>> myPrint() async {
