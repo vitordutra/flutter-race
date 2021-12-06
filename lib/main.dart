@@ -29,6 +29,7 @@ class _HomePageState extends State<HomePage> {
 
   void increment() {
     count++;
+    setState(() {});
   }
 
   @override
@@ -47,7 +48,6 @@ class _HomePageState extends State<HomePage> {
         child: Icon(Icons.add),
         onPressed: () {
           increment();
-          print(count);
         },
       ),
     );
