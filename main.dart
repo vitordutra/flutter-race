@@ -4,10 +4,10 @@ void main() async {
   print(response);
 }
 
-Future<List<String>> meuPrint() async {
+Future<Map<String, String>> meuPrint() async {
   await Future.delayed(Duration(seconds: 3));
-  return [
-    "João Vitor Dutra",
-    "Top 5",
-  ];
+  return {
+    "nome": "João Vitor Dutra",
+    "posicao": "Top 5",
+  };
 }
